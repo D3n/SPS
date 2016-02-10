@@ -1,36 +1,57 @@
-# SPS
+# SupCrowdFunding
 
-**[ J2EE | EJB 3.1 | JPA ]** 19/12/2014.
+**[ J2EE | Servlets/JSP | JPA ]** 28/11/2013.
 
-This is a SUPINFO MSc 1. mini-project.
+This is a SUPINFO BSc mini-project.
 Achieved in 2 weeks.
 
 # Requirements
 
-* Glasshfish `3.1.2`
+* Tomcat `7`
 * JDK `1.7.x`
 
+# Setup
+
+1. Import the SPS folder into Eclipse JAVA EE
+* Create a DB MySQL named : `projectstarter`
+* Modify `persistence.xml` with credentials and port
+* Start the project with a Tomcat 7
+* Default address is `http://localhost:8080/SPS/`
+* First user created has Admin role
+* Have fun and create : categories, users and projects to fund
+
+# API
+
+	GET /projects
+	GET /projects/{id}
+	GET /projects/byName/{name}
+	POST /projects
+	
+	GET /categories
+	GET /categories/{name}
+	
+	GET /users
+	GET /contributions
+	GET /groups 
+	
 # Project features
 
-As	anonymous:
+As anonymous:
 
-* View	a	short	description	of	this	service	and	statistics of	use	in the	index	page
-* View	a	offer	page	to	sale	10$	by	month	for	unlimited send	and	synchronize	messages
-* Register	as	a	new	user,	authenticate	himself
+* View current projects and information about them in the index page
+* View projects ordered by categories on the categories page
+* View projects’ information one by one thanks to a dedicated page
+* Register as a new user, authenticate himself
 
-As	a	registered	user:
+As a registered user:
 
-* Add/Delete/Update	contacts
-* Send	message	to	a	contact
-* View	a	conversation	with	a	contact
-* Delete	a	conversation with	a	contact
-* Web	Service	to	synchronize	sms and	contacts
-* Views	stats	of	exchanges	sms	with	contacts
-* View	and	edit	his	profile
-* View	and	edit	his	invoices
-* Log	out
+* Contribute on projects
+* Create a project
+* View and edit his profile
+* Log out
 
-As	an	administrator:
+As an administrator:
 
-* Show	and	manage	all	users
-* Show	all	invoices and	contacts
+* Overall platform view with an easily usable dashboard
+	* View all important data
+	* Create, Read, Update, Delete items
