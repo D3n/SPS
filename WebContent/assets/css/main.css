@@ -1,0 +1,1062 @@
+@font-face {
+
+    font-family: 'xtreme_chromeregular';
+    src: url('../fonts/xtrchr-webfont.eot');
+    src: url('../fonts/xtrchr-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/xtrchr-webfont.woff') format('woff'),
+    url('../fonts/xtrchr-webfont.ttf') format('truetype'),
+    url('../fonts/xtrchr-webfont.svg#xtreme_chromeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/************************************************************************************
+RESET
+*************************************************************************************/
+
+html, body, address, blockquote, div, dl, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset, input, label {
+
+    margin: 0;
+    padding: 0;
+}
+
+img {
+
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    width: auto \9; /* ie8 hack */
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, form, main {
+
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+
+body {
+
+    background: #FFFFFF url(../img/texture.jpg);
+    color: #000000;
+    width: 980px;
+    margin: 0 auto;
+}
+
+a {
+
+    color: #2AADFC;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+p {
+
+    margin: 0 0 1.2em;
+    padding: 0;
+}
+
+ul, ol {
+
+    margin: 1em 0 1.4em 24px;
+    padding: 0;
+    line-height: 140%;
+}
+
+li {
+
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    line-height: 1.4em;
+    margin: 20px 0 .4em;
+    color: #000000;
+}
+
+h1 {
+
+    font-size: 2em;
+}
+
+h2 {
+
+    font-size: 1.6em;
+}
+
+h3 {
+
+    font-size: 1.4em;
+}
+
+h4 {
+
+    font-size: 1.2em;
+}
+
+h5 {
+
+    font-size: 1.1em;
+}
+
+h6 {
+
+    font-size: 1em;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+
+#header {
+
+    position: relative;
+    height: 160px;
+    padding: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(top, #FFFFFF 10%, #EEF0F1 100%);
+    background: -moz-linear-gradient(top, #FFFFFF 10%, #EEF0F1 100%);
+    background: linear-gradient(top, #FFFFFF 10%, #EEF0F1 100%);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+#site-logo {
+
+    position: absolute;
+    top: 10px;
+}
+
+#site-logo a {
+
+    font: bold 37px/125% "xtreme_chromeregular", Helvetica, sans-serif;
+    text-shadow: -2px 0 rgba(255, 255, 255, 0.8),
+    0 2px rgba(255, 255, 255, 0.8),
+    2px 0 rgba(255, 255, 255, 0.8),
+    0 -2px rgba(255, 255, 255, 0.8);
+    color: #2AADFC;
+    text-decoration: none;
+}
+
+#site-logo a:hover {
+
+    text-shadow: -2px 0 rgba(79, 79, 79, 0.8),
+    0 2px rgba(79, 79, 79, 0.8),
+    2px 0 rgba(79, 79, 79, 0.8),
+    0 -2px rgba(79, 79, 79, 0.8);
+}
+
+#site-description {
+
+    font: italic 100%/130% "Times New Roman", Times, serif;
+    color: #000000;
+    position: absolute;
+    top: 55px;
+}
+
+#site-image {
+
+    margin: 0;
+
+}
+
+#site-image img {
+
+    float: right;
+    height: 160px;
+}
+
+/************************************************************************************
+MAIN NAVIGATION
+*************************************************************************************/
+
+#main-nav {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #2AADFC url(images/nav-bar-bg.png) repeat-x;
+    background: -webkit-linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    background: -moz-linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    background: linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .4);
+
+}
+
+#main-nav li {
+
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    text-align: center;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+#main-nav li#admin {
+
+    float: right;
+}
+
+#main-nav li:first-child, #main-nav li:first-child a:hover {
+
+    -webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    border-radius: 8px 0 0 8px;
+}
+
+#main-nav li:first-child a {
+
+    padding: 14px 15px 14px 30px;
+}
+
+#main-nav li:last-child a:hover {
+
+    -webkit-border-radius: 0 8px 8px 0;
+    -moz-border-radius: 0 8px 8px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#main-nav li:last-child a {
+
+    padding: 14px 30px 14px 15px;
+}
+
+#main-nav a {
+
+    line-height: 100%;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+    padding: 14px 15px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+}
+
+#main-nav a:hover {
+
+    color: #FFFFFF;
+    background: #474747;
+    background: -webkit-linear-gradient(top, #4f4f4f 0%, #282828 100%);
+    background: -moz-linear-gradient(top, #4f4f4f 0%, #282828 100%);
+    background: linear-gradient(top, #4f4f4f 0%, #282828 100%);
+}
+
+#main-nav {
+
+    float: right;
+    margin-right: 10px;
+}
+
+/************************************************************************************
+CONTENT
+*************************************************************************************/
+
+main {
+
+    background: #FFFFFF;
+    margin: 30px 0 30px;
+    padding: 30px 30px;
+    width: 700px;
+    float: right;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+.post-title {
+
+    margin: 0 0 20px;
+    padding: 0;
+    color: #2AADFC;
+    font: bold 26px/120% "xtreme_chromeregular", Arial, Helvetica, sans-serif;
+}
+
+.post-title a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.post-meta {
+
+    margin: 0 0 10px;
+    font-size: 90%;
+}
+
+.post-image {
+
+    margin: 0 0 15px;
+}
+
+/************************************************************************************
+SIDEBAR
+*************************************************************************************/
+
+#sidebar {
+
+    width: 180px;
+    float: left;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.widget {
+
+    background: #FFFFFF;
+    padding: 10px 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+.widgettitle {
+
+    margin: 0 auto 5px auto;
+    padding: 0;
+    color: #2AADFC;
+}
+
+.widget ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+.widget li {
+
+    margin: 0 auto;
+    padding: 6px 0;
+    list-style: none;
+    clear: both;
+    border-bottom: solid 1px #eee;
+}
+
+.widget ul:last-child, li:last-child {
+
+    border-bottom: none;
+}
+
+/************************************************************************************
+FORM
+*************************************************************************************/
+
+.button {
+
+    width: 110px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #2AADFC;
+    background: -webkit-linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    background: -moz-linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    background: linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    border-radius: 4px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.button:hover, .button#editP:hover {
+
+    cursor: pointer;
+    background: #474747;
+    background: -webkit-linear-gradient(top, #4f4f4f 0%, #282828 100%);
+    background: -moz-linear-gradient(top, #4f4f4f 0%, #282828 100%);
+    background: linear-gradient(top, #4f4f4f 0%, #282828 100%);
+}
+
+label.form_log {
+
+    width: 100%;
+    float: left;
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+
+input.form_log {
+
+    width: 100%;
+    margin: auto;
+    outline: none;
+}
+
+#form_log {
+
+    margin: 5px 0;
+}
+
+span.form_error {
+
+    font-size: 0.9em;
+    color: #FF2222;
+}
+
+#form_sign, #form_edit, #form_project {
+
+    text-align: center;
+}
+
+#form_sign fieldset, #form_project fieldset, #form_edit fieldset {
+
+    padding: 20px;
+    border-color: #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#form_sign legend, #form_project legend, #form_edit legend {
+
+    font-size: 1.2em;
+}
+
+#form_sign label {
+
+    width: 60%;
+    font-size: 1em;
+    margin: 5px auto;
+}
+
+#form_sign input[type=text], #form_sign input[type=password],
+#form_edit input[type=text], #form_edit input[type=password] {
+
+    width: 60%;
+    line-height: 1.4em;
+    font-size: 0.8em;
+    margin: auto;
+    outline: none;
+}
+
+#container_nNc, #container_dNd, #container_aNl {
+
+    width: 100%;
+}
+
+#project_name, #project_dstart, #project_am {
+
+    float: left;
+    width: 45%;
+    padding: 2px;
+}
+
+#project_am {
+
+    margin-top: 20px;
+}
+
+#project_cat, #project_dend, #project_ml {
+
+    margin-left: 55%;
+    width: 45%;
+    padding: 2px;
+}
+
+#form_project input[type=text], #form_project select, #form_project input[type=number] {
+
+    width: 98%;
+    line-height: 1.4em;
+}
+
+#form_project label {
+
+    font-size: 1em;
+    margin: 5px auto;
+}
+
+#form_project textarea {
+
+    width: 100%;
+}
+
+/************************************************************************************
+OTHERS
+*************************************************************************************/
+
+fieldset .button {
+
+    width: 160px;
+}
+
+#money_logo {
+
+    height: 100px;
+}
+
+.button#editP {
+
+    float: right;
+    background: #FC2A44;
+    background: -webkit-linear-gradient(top, #FC2A44 10%, #B21B2B 100%);
+    background: -moz-linear-gradient(top, #FC2A44 10%, #B21B2B 100%);
+    background: linear-gradient(top, #FC2A44 10%, #B21B2B 100%);
+}
+
+#about_art, #ml_art {
+
+    text-align: justify;
+    padding: 10px;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/************************************************************************************
+HOME
+*************************************************************************************/
+
+.project_tiles {
+
+    padding-bottom: 10px;
+    margin: 0 1.5% 15px 1.5%;
+    width: 45%;
+    float: left;
+    text-align: center;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.project_tiles p {
+
+    padding: 10px;
+    text-align: justify;
+}
+
+.project_tiles h3 {
+
+    margin: 0;
+    padding: 5px 0;
+    color: #FFFFFF;
+    background: #2AADFC;
+    background: -webkit-linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    background: -moz-linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+    background: linear-gradient(top, #2AADFC 10%, #1B77B2 100%);
+}
+
+.project_tiles h3 a {
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.project_tiles h3 a:hover {
+
+    text-shadow: -2px 0 rgba(79, 79, 79, 0.8),
+    0 2px rgba(79, 79, 79, 0.8),
+    2px 0 rgba(79, 79, 79, 0.8),
+    0 -2px rgba(79, 79, 79, 0.8);
+}
+
+.project_prog {
+
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+/************************************************************************************
+PROFIL
+*************************************************************************************/
+
+#profile_page fieldset {
+
+    padding: 20px;
+    border-color: #2AADFC;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#profile_page legend {
+
+    font-size: 1.2em;
+}
+
+#profile_page h5, #profile_page p {
+
+    margin: 0;
+}
+
+#profile_bloc {
+
+    width: 28%;
+    float: left;
+}
+
+#contribution_bloc {
+
+    width: 70%;
+    margin-left: 30%;
+}
+
+#cp_table {
+
+    width: 100%;
+}
+
+.cp_name {
+
+    width: 40%;
+}
+
+.cp_category {
+
+    width: 30%;
+}
+
+.cp_amount {
+
+    width: 30%;
+}
+
+/************************************************************************************
+PROJECTS
+*************************************************************************************/
+
+#project_creator #creator_selector {
+
+    width: 40%;
+}
+
+#project_creator {
+
+    margin_bottom: 10px;
+}
+
+#project_art {
+
+    padding: 10px;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#project_desc {
+
+    text-align: justify;
+}
+
+#project_progress {
+
+    width: 85%;
+    margin-right: 20px;
+}
+
+.project_progress {
+
+    width: 60%;
+    margin-right: 1%;
+}
+
+.progress_bloc p {
+
+    margin: 0;
+}
+
+#value_display {
+
+    margin-top: 5px;
+    text-align: center;
+}
+
+#form_contrib {
+
+    text-align: center;
+}
+
+p.success_p {
+
+    padding: 0;
+    color: #22FF22;
+    margin-top: 5px;
+    text-align: center;
+}
+
+p.finished_p {
+
+    padding: 0;
+    color: #FF2222;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/************************************************************************************
+CATEGORIES
+*************************************************************************************/
+
+#cat_art h3 select {
+
+    float: right;
+    vertical-align: middle;
+}
+
+#cat_art section {
+
+    text-align: center;
+}
+
+#cat_art fieldset {
+
+    padding: 1.5%;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#cat_art legend {
+
+    font-size: 1.2em;
+}
+
+#cat_art .project_tiles {
+
+    margin: 0 1.2% 15px 1.2%;
+    width: 47%;
+}
+
+/************************************************************************************
+ERROR
+*************************************************************************************/
+
+#error_logo {
+
+    float: right;
+}
+
+#error_art {
+
+    padding: 10px;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#error_art p {
+
+    text-align: justify;
+}
+
+/************************************************************************************
+ADMIN DASHBOARD
+*************************************************************************************/
+
+#adb_section1 {
+
+    margin-bottom: 10px;
+}
+
+#adb_art fieldset {
+
+    padding: 1.5%;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#adb_art legend {
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#adb_table {
+
+    width: 100%;
+    text-align: center;
+}
+
+#adb_table .user_col, #adb_table .proj_col, #adb_table .cont_col {
+
+    width: 33%;
+}
+
+#adb_art img {
+
+    height: 140px;
+}
+
+#adb_art li {
+
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+#adb_art li:first-child {
+
+    margin-right: 5%;
+}
+
+#adb_art li:last-child {
+
+    margin-left: 5%;
+}
+
+#adb_art a {
+
+    text-decoration: none;
+}
+
+#adb_art img {
+
+    border: solid 1px #000000;
+}
+
+#adb_art img:hover {
+
+    -webkit-box-shadow: 0 0 3px 3px rgba(79, 79, 79, 0.8);
+    -moz-box-shadow: 0 0 3px 3px rgba(79, 79, 79, 0.8);
+    box-shadow: 0 0 3px 3px rgba(79, 79, 79, 0.8);
+}
+
+/************************************************************************************
+CATEGORIES MANAGEMENT
+*************************************************************************************/
+
+#mca_art fieldset {
+
+    padding: 1.5%;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#mca_art legend {
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#mca_form_bloc {
+
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+#mca_bloc {
+
+    width: 67%;
+    margin-left: 33%;
+}
+
+#mca_table {
+
+    width: 100%;
+    text-align: center;
+}
+
+#mca_table .button {
+
+    width: 110px;
+}
+
+.mca_name {
+
+    width: 30%;
+}
+
+.mca_actions {
+
+    width: 70%;
+}
+
+/************************************************************************************
+CATEGORIES MANAGEMENT
+*************************************************************************************/
+
+#mua_art #createU {
+
+    width: 160px;
+    float: right;
+}
+
+#mua_art fieldset {
+
+    padding: 1.5%;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#mua_art legend {
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#mua_table {
+
+    width: 100%;
+    text-align: center;
+}
+
+#mua_table .button {
+
+    width: 110px;
+}
+
+.mua_email {
+
+    width: 25%;
+}
+
+.mua_name {
+
+    width: 17.5%;
+}
+
+.mua_firstname {
+
+    width: 17.5%;
+}
+
+.mua_actions {
+
+    width: 40%;
+}
+
+/************************************************************************************
+CATEGORIES MANAGEMENT
+*************************************************************************************/
+
+#mpa_art #createP {
+
+    width: 160px;
+    float: right;
+}
+
+#mpa_art fieldset {
+
+    padding: 1.5%;
+    border: solid 2px #2AADFC;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#mpa_art legend {
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#mpa_table {
+
+    width: 100%;
+    text-align: center;
+}
+
+#mpa_table .button {
+
+    width: 90px;
+}
+
+.mpa_name, .mpa_creator {
+
+    width: 20%;
+}
+
+.mpa_amount, .mpa_category {
+
+    width: 15%;
+}
+
+.mpa_actions {
+
+    width: 30%;
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+
+#footer {
+
+    clear: both;
+    height: 24px;
+    color: #000000;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+
+.clearfix:after {
+
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+
+    display: inline-block;
+}
+
+.clearfix {
+
+    display: block;
+    zoom: 1;
+}
+
